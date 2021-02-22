@@ -10,10 +10,9 @@ class Dog {
         string color;
         string petName;
 
-
-        Dog();
-
         void displayDetails();
+	
+	Dog();
 };
 
 Dog :: Dog(){
