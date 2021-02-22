@@ -12,15 +12,11 @@ class Dog {
 
         void displayDetails();
 
-        ~Dog();
-
         Dog();
         Dog(int, string, string, string);
+	~Dog();
 };
 
-Dog :: ~Dog(){
-	cout << "Dog object with age: " << this->age << "being deleted.\n" ;
-}
 Dog :: Dog() {
     cout << "Dog object created\n";
 }
@@ -30,6 +26,10 @@ Dog :: Dog(int age, string breed, string color, string petName) {
     this->breed = breed;
     this->color = color;
     this->petName = petName;
+}
+
+Dog :: ~Dog(){
+	cout << "Dog object with age: " << this->age << "being deleted.\n" ;
 }
 
 void Dog :: displayDetails() {
